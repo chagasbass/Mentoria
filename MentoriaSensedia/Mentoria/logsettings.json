@@ -1,0 +1,15 @@
+{
+
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.Console" ],
+    "LevelSwitches": { "controlSwitch": "Verbose" },
+    "FilterSwitches": { "$filterSwitch": "Application = 'Sample'" },
+    "MinimumLevel": {
+      "Default": "Debug",
+      "Override": {
+        "Microsoft": "Warning",
+        "Mentoria": "Verbose"
+      }
+    }
+  }
+}
